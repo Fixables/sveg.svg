@@ -110,14 +110,6 @@
     <path d="M0 208 C170 194, 300 240, 470 214 C640 190, 760 248, 940 224 C1070 205, 1140 242, 1200 228"
           fill="none" stroke="#ffffff" stroke-width="1.7" opacity="0.11"/>
 
-<!-- Coconut island silhouette (left) -->
-<image href="assets/coconut.png"
-       x="65" y="92"
-       width="240"
-       height="175"
-       opacity="0.95"
-       preserveAspectRatio="xMinYMin meet"/>
-
       <!-- smaller tree behind -->
       <g transform="translate(118 8) scale(0.75)" opacity="0.9">
         <path d="M35 120
