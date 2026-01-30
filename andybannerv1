@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Andy Setiawan Bali sunset header">
+  <defs>
+    <!-- Left-to-right wipe reveal -->
+    <clipPath id="wipe">
+      <rect x="0" y="0" width="0" height="260">
+        <animate attributeName="width" from="0" to="1200" dur="2.2s" begin="0s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <!-- Sunset sky + lake gradients -->
+    <linearGradient id="skySunset" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#f0c2a8"/>
+      <stop offset="35%" stop-color="#f2b18f"/>
+      <stop offset="62%" stop-color="#ffb36b"/>
+      <stop offset="82%" stop-color="#ff8a4c"/>
+      <stop offset="100%" stop-color="#ffd2b0"/>
+    </linearGradient>
+
+    <linearGradient id="skyGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff1dc" stop-opacity="0.95"/>
+      <stop offset="65%" stop-color="#ffd19b" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ff8a4c" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="lakeSunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ffb36b" stop-opacity="0.55"/>
+      <stop offset="35%" stop-color="#d8844a" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#0b3a5d" stop-opacity="1"/>
+    </linearGradient>
+
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="reflectionFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.32"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Sun glow -->
+    <filter id="sunGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Jepun flower -->
+    <g id="jepun">
+      <circle cx="0" cy="0" r="7" fill="#fff7ed" opacity="0.96"/>
+      <g fill="#ffe4e6" opacity="0.96">
+        <ellipse cx="0" cy="-10" rx="6.5" ry="10"/>
+        <ellipse cx="9" cy="-3" rx="6.5" ry="10" transform="rotate(72 9 -3)"/>
+        <ellipse cx="6" cy="8" rx="6.5" ry="10" transform="rotate(144 6 8)"/>
+        <ellipse cx="-6" cy="8" rx="6.5" ry="10" transform="rotate(216 -6 8)"/>
+        <ellipse cx="-9" cy="-3" rx="6.5" ry="10" transform="rotate(288 -9 -3)"/>
+      </g>
+      <circle cx="0" cy="0" r="2.6" fill="#f59e0b"/>
+    </g>
+
+    <!-- Text style -->
+    <style>
+      .name {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
+        font-weight: 700;
+        letter-spacing: 2.2px;
+      }
+      .tag {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
+        font-weight: 650;
+        letter-spacing: 3px;
+      }
+    </style>
+  </defs>
+
+  <!-- Rounded container -->
+  <rect x="0" y="0" width="1200" height="260" rx="22" ry="22" fill="#0b1220"/>
+
+  <!-- Scene clipped by wipe -->
+  <g clip-path="url(#wipe)">
+    <!-- Sky -->
+    <rect x="0" y="0" width="1200" height="155" fill="url(#skySunset)"/>
+
+    <!-- Bright glow region (top-right) -->
+    <circle cx="930" cy="60" r="90" fill="#fff1dc" opacity="0.55" filter="url(#sunGlow)"/>
+    <circle cx="980" cy="62" r="55" fill="#ffe0b3" opacity="0.55" filter="url(#sunGlow)"/>
+    <rect x="0" y="0" width="1200" height="155" fill="url(#skyGlow)"/>
+
+    <!-- Far ridge -->
+    <path d="M0 142
+             C140 126, 250 140, 360 126
+             C500 108, 620 148, 720 126
+             C820 110, 920 140, 1020 126
+             C1100 114, 1160 128, 1200 118
+             L1200 155 L0 155 Z"
+          fill="#1b2330" opacity="0.72"/>
+
+    <!-- Mist strip -->
+    <rect x="0" y="110" width="1200" height="60" fill="url(#mist)" opacity="0.55"/>
+
+    <!-- Lake -->
+    <rect x="0" y="155" width="1200" height="105" fill="url(#lakeSunset)"/>
+
+    <!-- Ripples -->
+    <path d="M0 186 C160 164, 280 216, 430 193 C600 166, 710 230, 900 202 C1040 182, 1120 225, 1200 200"
+          fill="none" stroke="#ffffff" stroke-width="2.1" opacity="0.14"/>
+    <path d="M0 208 C170 194, 300 240, 470 214 C640 190, 760 248, 940 224 C1070 205, 1140 242, 1200 228"
+          fill="none" stroke="#ffffff" stroke-width="1.7" opacity="0.11"/>
+
+<!-- Coconut island silhouette (left) -->
+<image href="assets/coconut.png"
+       x="65" y="92"
+       width="240"
+       height="175"
+       opacity="0.95"
+       preserveAspectRatio="xMinYMin meet"/>
+
+      <!-- smaller tree behind -->
+      <g transform="translate(118 8) scale(0.75)" opacity="0.9">
+        <path d="M35 120
+                 C44 96, 44 70, 40 48
+                 C36 32, 34 22, 36 10
+                 C28 18, 24 30, 24 42
+                 C26 66, 26 94, 20 120 Z"/>
+        <path d="M34 12 C18 8, 2 8, -14 10 C2 14, 16 24, 26 38 Z"/>
+        <path d="M34 12 C48 8, 64 10, 82 14 C64 18, 50 28, 40 40 Z" opacity="0.92"/>
+      </g>
+
+      <!-- tiny rock -->
+      <ellipse cx="40" cy="86" rx="16" ry="9" opacity="0.9"/>
+    </g>
+
+    <!-- Reflection fade -->
+    <rect x="0" y="155" width="1200" height="105" fill="url(#reflectionFade)"/>
+
+    <!-- Jepun flowers: denser diagonal fall -->
+    <g opacity="0.94">
+      <use href="#jepun" x="40"  y="-40" transform="scale(0.75)">
+        <animateTransform attributeName="transform" type="translate" from="-120 -160" to="1360 380" dur="5.8s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 40 -40" to="260 40 -40" dur="5.8s" repeatCount="indefinite"/>
+      </use>
+      <use href="#jepun" x="120" y="-30" transform="scale(0.60)">
+        <animateTransform attributeName="transform" type="translate" from="-200 -180" to="1440 400" dur="6.4s" begin="0.2s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 120 -30" to="-240 120 -30" dur="6.4s" begin="0.2s" repeatCount="indefinite"/>
+      </use>
+      <use href="#jepun" x="200" y="-55" transform="scale(0.85)">
+        <animateTransform attributeName="transform" type="translate" from="-280 -210" to="1500 430" dur="6.1s" begin="0.35s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 200 -55" to="300 200 -55" dur="6.1s" begin="0.35s" repeatCount="indefinite"/>
+      </use>
+      <use href="#jepun" x="290" y="-35" transform="scale(0.65)">
+        <animateTransform attributeName="transform" type="translate" from="-370 -190" to="1580 410" dur="6.7s" begin="0.1s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 290 -35" to="-260 290 -35" dur="6.7s" begin="0.1s" repeatCount="indefinite"/>
+      </use>
+      <use href="#jepun" x="380" y="-60" transform="scale(0.72)">
+        <animateTransform attributeName="transform" type="translate" from="-460 -220" to="1660 440" dur="6.0s" begin="0.55s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 380 -60" to="220 380 -60" dur="6.0s" begin="0.55s" repeatCount="indefinite"/>
+      </use>
+      <use href="#jepun" x="520" y="-40" transform="scale(0.90)">
+        <animateTransform attributeName="transform" type="translate" from="-600 -180" to="1780 410" dur="6.3s" begin="0.3s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 520 -40" to="320 520 -40" dur="6.3s" begin="0.3s" repeatCount="indefinite"/>
+      </use>
+      <use href="#jepun" x="700" y="-45" transform="scale(0.75)">
+        <animateTransform attributeName="transform" type="translate" from="-780 -190" to="1980 420" dur="6.4s" begin="0.6s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 700 -45" to="250 700 -45" dur="6.4s" begin="0.6s" repeatCount="indefinite"/>
+      </use>
+      <use href="#jepun" x="910" y="-35" transform="scale(0.68)">
+        <animateTransform attributeName="transform" type="translate" from="-990 -170" to="2220 400" dur="6.2s" begin="0.75s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 910 -35" to="260 910 -35" dur="6.2s" begin="0.75s" repeatCount="indefinite"/>
+      </use>
+      <use href="#jepun" x="1120" y="-40" transform="scale(0.78)">
+        <animateTransform attributeName="transform" type="translate" from="-1200 -180" to="2480 410" dur="6.5s" begin="0.95s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 1120 -40" to="300 1120 -40" dur="6.5s" begin="0.95s" repeatCount="indefinite"/>
+      </use>
+    </g>
+  </g>
+
+  <!-- Centered text -->
+  <text x="600" y="128" text-anchor="middle" font-size="58" class="name" fill="#20130f" opacity="0">
+    Andy Setiawan
+    <animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="0.65s" fill="freeze"/>
+  </text>
+
+  <text x="600" y="162" text-anchor="middle" font-size="16" class="tag" fill="#20130f" opacity="0">
+    From Bali
+    <animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="1.0s" fill="freeze"/>
+  </text>
+</svg>
