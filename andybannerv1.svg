@@ -104,69 +104,52 @@
     <rect x="0" y="155" width="1200" height="105" fill="url(#reflectionFade)"/>
 
     <!-- Jepun flowers: more intense from the start + better coverage (including bottom-left) -->
-    <g opacity="0.96">
-      <!-- top-left starters -->
-      <use href="#jepun" x="40"  y="-30" transform="scale(0.85)">
-        <animateTransform attributeName="transform" type="translate" from="-160 -140" to="1360 400" dur="4.4s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 40 -30" to="280 40 -30" dur="4.4s" begin="0s" repeatCount="indefinite"/>
-      </use>
-      <use href="#jepun" x="120" y="-60" transform="scale(0.65)">
-        <animateTransform attributeName="transform" type="translate" from="-240 -200" to="1440 420" dur="4.9s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 120 -60" to="-260 120 -60" dur="4.9s" begin="0s" repeatCount="indefinite"/>
-      </use>
-      <use href="#jepun" x="210" y="-45" transform="scale(0.78)">
-        <animateTransform attributeName="transform" type="translate" from="-320 -180" to="1520 420" dur="4.6s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 210 -45" to="320 210 -45" dur="4.6s" begin="0s" repeatCount="indefinite"/>
-      </use>
+    <!-- Jepun flowers: dense, always spawning off-screen, drifting to bottom-right -->
+<g opacity="0.96">
 
-      <!-- mid starters -->
-      <use href="#jepun" x="360" y="-40" transform="scale(0.70)">
-        <animateTransform attributeName="transform" type="translate" from="-520 -170" to="1660 420" dur="4.7s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 360 -40" to="240 360 -40" dur="4.7s" begin="0s" repeatCount="indefinite"/>
-      </use>
-      <use href="#jepun" x="520" y="-30" transform="scale(0.92)">
-        <animateTransform attributeName="transform" type="translate" from="-680 -150" to="1820 420" dur="4.8s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 520 -30" to="330 520 -30" dur="4.8s" begin="0s" repeatCount="indefinite"/>
-      </use>
-      <use href="#jepun" x="640" y="-55" transform="scale(0.62)">
-        <animateTransform attributeName="transform" type="translate" from="-800 -200" to="1940 430" dur="5.1s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 640 -55" to="-300 640 -55" dur="5.1s" begin="0s" repeatCount="indefinite"/>
-      </use>
+  <!-- Group A: lots of starters from top-left / left -->
+  <use href="#jepun" x="40" y="-40" transform="scale(0.70)">
+    <animateTransform attributeName="transform" type="translate" from="-300 -280" to="1500 520" dur="3.6s" begin="0s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 40 -40" to="260 40 -40" dur="3.6s" begin="0s" repeatCount="indefinite"/>
+  </use>
 
-      <!-- right starters -->
-      <use href="#jepun" x="820" y="-40" transform="scale(0.74)">
-        <animateTransform attributeName="transform" type="translate" from="-980 -170" to="2160 420" dur="4.9s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 820 -40" to="260 820 -40" dur="4.9s" begin="0s" repeatCount="indefinite"/>
-      </use>
-      <use href="#jepun" x="980" y="-60" transform="scale(0.86)">
-        <animateTransform attributeName="transform" type="translate" from="-1140 -210" to="2360 430" dur="5.0s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 980 -60" to="300 980 -60" dur="5.0s" begin="0s" repeatCount="indefinite"/>
-      </use>
-      <use href="#jepun" x="1120" y="-35" transform="scale(0.66)">
-        <animateTransform attributeName="transform" type="translate" from="-1280 -160" to="2520 410" dur="5.2s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 1120 -35" to="280 1120 -35" dur="5.2s" begin="0s" repeatCount="indefinite"/>
-      </use>
+  <use href="#jepun" x="120" y="-90" transform="scale(0.60)">
+    <animateTransform attributeName="transform" type="translate" from="-520 -340" to="1480 520" dur="3.9s" begin="0.1s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 120 -90" to="-240 120 -90" dur="3.9s" begin="0.1s" repeatCount="indefinite"/>
+  </use>
 
-      <!-- EXTRA: bottom-left coverage (start inside canvas so it’s not empty there) -->
-      <use href="#jepun" x="60" y="170" transform="scale(0.70)">
-        <animateTransform attributeName="transform" type="translate" from="0 0" to="1240 260" dur="4.3s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 60 170" to="-260 60 170" dur="4.3s" begin="0s" repeatCount="indefinite"/>
-      </use>
-      <use href="#jepun" x="120" y="190" transform="scale(0.62)">
-        <animateTransform attributeName="transform" type="translate" from="-40 -10" to="1220 250" dur="4.6s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 120 190" to="260 120 190" dur="4.6s" begin="0s" repeatCount="indefinite"/>
-      </use>
-      <use href="#jepun" x="190" y="210" transform="scale(0.78)">
-        <animateTransform attributeName="transform" type="translate" from="-90 -20" to="1180 230" dur="4.8s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 190 210" to="320 190 210" dur="4.8s" begin="0s" repeatCount="indefinite"/>
-      </use>
+  <use href="#jepun" x="220" y="-60" transform="scale(0.82)">
+    <animateTransform attributeName="transform" type="translate" from="-420 -300" to="1600 520" dur="3.7s" begin="0.2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 220 -60" to="320 220 -60" dur="3.7s" begin="0.2s" repeatCount="indefinite"/>
+  </use>
 
-      <!-- EXTRA: more density overall (staggered, still immediate) -->
-      <use href="#jepun" x="260" y="-25" transform="scale(0.58)">
-        <animateTransform attributeName="transform" type="translate" from="-380 -140" to="1580 420" dur="4.2s" begin="0s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 260 -25" to="240 260 -25" dur="4.2s" begin="0s" repeatCount="indefinite"/>
-      </use>
-    </g>
+  <use href="#jepun" x="320" y="-120" transform="scale(0.55)">
+    <animateTransform attributeName="transform" type="translate" from="-720 -420" to="1480 520" dur="4.0s" begin="0.0s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 320 -120" to="260 320 -120" dur="4.0s" begin="0.0s" repeatCount="indefinite"/>
+  </use>
+
+  <use href="#jepun" x="420" y="-70" transform="scale(0.68)">
+    <animateTransform attributeName="transform" type="translate" from="-800 -320" to="1650 520" dur="3.8s" begin="0.15s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 420 -70" to="-300 420 -70" dur="3.8s" begin="0.15s" repeatCount="indefinite"/>
+  </use>
+
+  <use href="#jepun" x="520" y="-45" transform="scale(0.90)">
+    <animateTransform attributeName="transform" type="translate" from="-980 -260" to="1780 520" dur="3.6s" begin="0.05s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 520 -45" to="340 520 -45" dur="3.6s" begin="0.05s" repeatCount="indefinite"/>
+  </use>
+
+  <use href="#jepun" x="610" y="-100" transform="scale(0.58)">
+    <animateTransform attributeName="transform" type="translate" from="-1120 -380" to="1820 540" dur="4.1s" begin="0.25s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 610 -100" to="260 610 -100" dur="4.1s" begin="0.25s" repeatCount="indefinite"/>
+  </use>
+
+  <use href="#jepun" x="720" y="-65" transform="scale(0.75)">
+    <animateTransform attributeName="transform" type="translate" from="-1300 -300" to="1980 540" dur="3.7s" begin="0.18s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="rotate" from="0 720 -65" to="-260 720 -65" dur="3.7s" begin="0.18s" repeatCount="indefinite"/>
+  </use>
+
+  <use href="#jepun" x="820" y="-120" transform="scale(0.62)">
+    <animateTransform attributeName="tran
 
     <!-- Centered text (fade in slightly after scene starts) -->
     <text x="600" y="138" text-anchor="middle" font-size="58" class="name" fill="#20130f" opacity="0">
