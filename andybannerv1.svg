@@ -110,24 +110,6 @@
     <path d="M0 208 C170 194, 300 240, 470 214 C640 190, 760 248, 940 224 C1070 205, 1140 242, 1200 228"
           fill="none" stroke="#ffffff" stroke-width="1.7" opacity="0.11"/>
 
-      <!-- smaller tree behind -->
-      <g transform="translate(118 8) scale(0.75)" opacity="0.9">
-        <path d="M35 120
-                 C44 96, 44 70, 40 48
-                 C36 32, 34 22, 36 10
-                 C28 18, 24 30, 24 42
-                 C26 66, 26 94, 20 120 Z"/>
-        <path d="M34 12 C18 8, 2 8, -14 10 C2 14, 16 24, 26 38 Z"/>
-        <path d="M34 12 C48 8, 64 10, 82 14 C64 18, 50 28, 40 40 Z" opacity="0.92"/>
-      </g>
-
-      <!-- tiny rock -->
-      <ellipse cx="40" cy="86" rx="16" ry="9" opacity="0.9"/>
-    </g>
-
-    <!-- Reflection fade -->
-    <rect x="0" y="155" width="1200" height="105" fill="url(#reflectionFade)"/>
-
     <!-- Jepun flowers: denser diagonal fall -->
     <g opacity="0.94">
       <use href="#jepun" x="40"  y="-40" transform="scale(0.75)">
